@@ -11,7 +11,7 @@ const searchInput = document.getElementById("search__input");
 const searchBtn = document.getElementById("search__btn");
 
 const selectMovieBox = document.querySelector(".movie__box")
-
+var searchTerm;
 
 const trendingUrl= 'https://api.themoviedb.org/3/trending/all/day?api_key=d8bf019d0cca372bd804735f172f67e8';
 
@@ -29,7 +29,11 @@ function handleClick(e){
     e.preventDefault()
     header.textContent=  searchInput.value;
       moviesContainer.innerHTML = '';
-    const searchTerm = searchInput.value;
+    if(searchInput.value == "" || searchInput.value == " " || searchInput.value == "  " || searchInput.value == "   " || searchInput.value == "    "){
+       alert("Enter a valid Movie name")
+       window.location.reload();
+    }
+    searchTerm = searchInput.value;
 
     const getUrl = SEARCH_URL + searchTerm + '&include_adult=false'
     
@@ -41,10 +45,12 @@ function handleClick(e){
 async function getMovies(url) {
     const response = await fetch(url);
     const data = await response.json();
+   
     fetchedData(data)
    
 
 }
+
 
 
 
