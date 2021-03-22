@@ -61,6 +61,7 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
   -webkit-appearance: none;
   box-shadow: none;
+  font-size: 1rem;
 }
 
 #search__btn {
@@ -214,8 +215,9 @@ input::-webkit-inner-spin-button {
 }
 
 .modal__wrapper span {
-  color: gold;
+  color: rgb(238, 202, 0);
   font-size: 1rem;
+  font-weight: bold;
 }
 .modal__wrapper b {
   color: #000;
