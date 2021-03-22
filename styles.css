@@ -52,7 +52,7 @@ input::-webkit-inner-spin-button {
 }
 
 #search__input {
-  width: 50%;
+  width: 40%;
   height: 40px;
   padding: 10px;
   outline: none;
@@ -64,7 +64,8 @@ input::-webkit-inner-spin-button {
 }
 
 #search__btn {
-  padding: 8px 50px;
+  width: 15%;
+  height: 40px;
   background-color: rgb(255, 0, 55);
   outline: none;
   border: none;
@@ -227,18 +228,38 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 730px) {
+  #search__input {
+    width: 60%;
+  }
+
+  #search__btn {
+    width: 25%;
+  }
   .modal__wrapper {
     width: 65%;
   }
 }
 
 @media (max-width: 560px) {
+  #search__input {
+    width: 65%;
+  }
+
+  #search__btn {
+    width: 25%;
+  }
   .modal__wrapper {
     width: 80%;
   }
 }
 
 @media (max-width: 415px) {
+  #search__input {
+    width: 65%;
+  }
+
+  #search__btn {
+  }
   .modal__wrapper {
     width: 83%;
     height: 65vh;
