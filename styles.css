@@ -17,6 +17,11 @@ body {
                                     supported by Chrome, Edge, Opera and Firefox */
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .container {
   width: 100vw;
@@ -54,6 +59,8 @@ body {
   border: 1px solid rgb(185, 184, 184);
   color: rgb(46, 46, 46);
   font-weight: bold;
+  -webkit-appearance: none;
+  box-shadow: none;
 }
 
 #search__btn {
@@ -67,6 +74,7 @@ body {
   font-size: 20px;
   text-align: center;
   margin-left: 10px;
+  -webkit-appearance: none;
 }
 #search__btn:hover {
   background-color: #000;
